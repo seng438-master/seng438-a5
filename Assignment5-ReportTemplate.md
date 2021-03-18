@@ -1,6 +1,6 @@
 **SENG 438- Software Testing, Reliability, and Quality**
 
-**Lab. Report \#5 – Mutation Testing and Web app testing**
+**Lab. Report \#5 – Software Reliability Assessment**
 
 | Group \#:       |   |
 |-----------------|---|
