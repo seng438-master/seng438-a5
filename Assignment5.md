@@ -43,75 +43,50 @@ After completing this part, students will:
 ## 2.2 TESTING TOOLS
 
 The testing tool to be used in this part, is 
-- CASRE (freeware running on 32bit systems) **OR** 
-- START (open source, developed by Dr. Far's Lab, running on various OS including 32bit and 64bit Windows and Linux). When using CASRE, Dr. Far's Lab has developed a Dosbox environment for it that allows it run on 32-bit and 64bits Windows OS.
+- START (open source, developed by Dr. Far's Lab, running on various OS including 32bit and 64bit Windows and Linux). 
  **OR** 
 - C-SFRAT (an open source software developed by Python). 
 
 
 ## 2.3 SYSTEM UNDER TEST
 
-The system to be tested for this part is a hypothetical system and its failure data is attached. There will be a few test data files and the students should select one of them.
+The system to be tested for this part is a hypothetical system and its failure data is attached (![failure-dataset-a5.zip](./failure-dataset-a5.zip)). 
+
+**Note**:
+  - If you want to use CASRE you <mark>may need to change the dataset </mark>. 
+  - Read readme.txt in failure-dataset-a5.zip to learn about the dataset format
 
 ## 2.4 FAMILIARIZATION
 
-### 2.4.1 INSTALL CASRE
-
-1. Get the CASRE30.exe (self-extracting archive) and its manual CASRE3UG.pdf.
-2. Get the CASRE-DOSBOX.zip.
-3. If you are running 32-bit Windows operating system, follow the installation process for CASRE30 and run it.
-4. If you are running 64-bit Windows operating system you need to install CASRE-DOSBOX.zip by:
-   - unzip the CASRE-DOSBOX.zip
-   - run DOSBoxinst.exe: This will create C:\Win3HD and install DOSBOX and CASRE in it (if these are not already in the package
-   - run the inst.bat
-   - go to Win3HD folder in your C:\Win3HD drive in your computer --or-- the \Win3HD that is in the unpacked DOSBOX package
-   - run CASRE from either of the Win3HD folders
-      
-      **Note:** If the models do not show up in the model selection menu when running CASRE, you should copy the casrev3.ini file from CASRE-DOSBOX.zip package (located at the root directory of this package) to C:\Win3HD\WINDOWS and start CASRE again.
-
-
-
-### 2.4.2 Alternative 1: INSTALL STRAT
+### 2.4.1 INSTALL STRAT
 
 1. Get SRTAT-SRE-tool.zip.
 2. It is a Java package that has 4 variations for different operating systems. Install the appropriate version on your system.
 3. Run and verify its functionalities.
 
 
-### 2.4.3 Alternative 2: INSTALL C-SFRAT (**Suggestion** )
+### 2.4.3 Alternative: INSTALL C-SFRAT (**Suggestion** )
 
 1. Get C-SFRAT binary from [GitHub](https://github.com/LanceFiondella/C-SFRAT/releases/tag/v1.0). There are a Windows and a Linux executable. Download and unzip the appropriate version on your system.
 2. Run and verify its functionalities.
 
 
 ## 2.5  **INSTRUCTIONS**
+### 2.5.1 Running SRTAT
 
+Software Reliability and Testing Analysis Tool.
 
-
-### 2.5.1 Running CASRE
-
-![](./media/running-casre.png)
-
-Computer-Aided Software Reliability Estimation Tool. CASRE provides operations to transform or smooth the failure data; the user can select and/or define multiple models for application to the data and make reliability predictions based on the best model.
-
-1. Run CASRE
+1. Run SRTAT
 2. Import failure data
 3. Select a set of models that would provide the best fit for the project data using model ranking
 4. Select the range of useful data using Laplace or other tests
 5. Display time-between-failures, failure intensity and reliability graphs
 6. Discuss the acceptable range of failure rate for the test data
 
-### 2.5.2 Running SRTAT
-
-Software Reliability and Testing Analysis Tool.
-
-1. Run SRTAT
-2. Execute steps 2-6 same as 2.5.1
-
 ![](./media/running-srtat.png)
 
 
-### 2.5.3 Running C-SFRAT
+### 2.5.2 Running C-SFRAT
 
 The Covariate Software Failure and Reliability Assessment Tool (C-SFRAT) is an open source application that applies covariate software reliability models to help guide model selection and test activity allocation. 
 
@@ -120,15 +95,9 @@ The Covariate Software Failure and Reliability Assessment Tool (C-SFRAT) is an o
 
 To more information about the input format and features of the tool, you can read [A covariate software tool to guide test activity allocation](https://www.sciencedirect.com/science/article/pii/S2352711021001588)
 
-
 ![](./media/c-sfrat.png)
 
-
-
-
-
 **Note:** If none of the above mentioned tools work for you, try to find other tools that may work.
-
 
 1. Software Defect Estimation Tool (SweET): [https://github.com/LanceFiondella/SwEET](https://github.com/LanceFiondella/SwEET)
 
@@ -155,13 +124,13 @@ In this assignment, you will use the following tools to analyze the test data pr
 -  RDC-11 (an EXCEL worksheet and macro). 
 ## 3.3 SYSTEM UNDER TEST
 
-The system to be tested for this part is a hypothetical system and its failure data is attached. There will be a few test data files and the students should select one of them.
+The system to be tested for this part is a hypothetical system and its failure data is attached(![failure-dataset-a5.zip](./failure-dataset-a5.zip)).  You may need to change the dataset format.
 
 ## 3.4 FAMILIARIZATION
 
 ### 3.4.1 INSTALL RDC (**Suggestion**)
 
-1. Get Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf for the attachemnt OR download it from the [Sourceforge.net](https://sourceforge.net/projects/rdc/) .
+1. Get Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf for the attachemnt OR download it from the [Sourceforge.net](https://sourceforge.net/projects/rdc/).
 2. Open the excel sheet and verify that it works by setting various risk factors, i.e. check whether the right chart will be generated.
 3. Read the document explaining its functionality.
 
