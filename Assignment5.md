@@ -4,7 +4,9 @@
 
 > **Software Reliability Assessment**
 
-> Instructor: Dr. Behrouz Far ([far@ucalgary.ca](mailto:far@ucalgary.ca))
+  Instructors: 
+>   -   Dr. Behrouz Far (far@ucalgary.ca)
+>   -   Dr. Kangsoo Kim (kangsoo.kim@ucalgary.ca)
 
 > Department of Electrical and Computer Engineering
 
@@ -40,7 +42,12 @@ After completing this part, students will:
 
 ## 2.2 TESTING TOOLS
 
-The testing tool to be used in this part, is either CASRE (freeware running on 32bit systems) or START (open source, developed by Dr. Far's Lab, running on various OS including 32bit and 64bit Windows and Linux). When using CASRE, Dr. Far's Lab has developed a Dosbox environment for it that allows it run on 32-bit and 64bits Windows OS.
+The testing tool to be used in this part, is 
+- CASRE (freeware running on 32bit systems) **OR** 
+- START (open source, developed by Dr. Far's Lab, running on various OS including 32bit and 64bit Windows and Linux). When using CASRE, Dr. Far's Lab has developed a Dosbox environment for it that allows it run on 32-bit and 64bits Windows OS.
+ **OR** 
+- C-SFRAT (an open source software developed by Python). 
+
 
 ## 2.3 SYSTEM UNDER TEST
 
@@ -64,11 +71,18 @@ The system to be tested for this part is a hypothetical system and its failure d
 
 
 
-### 2.4.2 Alternative: INSTALL STRAT
+### 2.4.2 Alternative 1: INSTALL STRAT
 
 1. Get SRTAT-SRE-tool.zip.
 2. It is a Java package that has 4 variations for different operating systems. Install the appropriate version on your system.
 3. Run and verify its functionalities.
+
+
+### 2.4.3 Alternative 2: INSTALL C-SFRAT (**Suggestion** )
+
+1. Get C-SFRAT binary from [GitHub](https://github.com/LanceFiondella/C-SFRAT/releases/tag/v1.0). There are a Windows and a Linux executable. Download and unzip the appropriate version on your system.
+2. Run and verify its functionalities.
+
 
 ## 2.5  **INSTRUCTIONS**
 
@@ -76,7 +90,7 @@ The system to be tested for this part is a hypothetical system and its failure d
 
 ### 2.5.1 Running CASRE
 
-![](./media/2021-03-17-17-31-07.png)
+![](./media/running-casre.png)
 
 Computer-Aided Software Reliability Estimation Tool. CASRE provides operations to transform or smooth the failure data; the user can select and/or define multiple models for application to the data and make reliability predictions based on the best model.
 
@@ -92,13 +106,29 @@ Computer-Aided Software Reliability Estimation Tool. CASRE provides operations t
 Software Reliability and Testing Analysis Tool.
 
 1. Run SRTAT
-2. Execute steps 2-6 same as above
+2. Execute steps 2-6 same as 2.5.1
 
-![](./media/2021-03-17-17-33-33.png)
+![](./media/running-srtat.png)
+
+
+### 2.5.3 Running C-SFRAT
+
+The Covariate Software Failure and Reliability Assessment Tool (C-SFRAT) is an open source application that applies covariate software reliability models to help guide model selection and test activity allocation. 
+
+1. Run C-SFRAT.exe for Windows  
+2. Execute steps 2-6 same as 2.5.1
+
+To more information about the input format and features of the tool, you can read [A covariate software tool to guide test activity allocation](https://www.sciencedirect.com/science/article/pii/S2352711021001588)
+
+
+![](./media/c-sfrat.png)
+
+
+
+
 
 **Note:** If none of the above mentioned tools work for you, try to find other tools that may work.
 
-A list of those tools (freeware) are given on [https://sasdlc.org/lab/assets/projects/srt.html](https://sasdlc.org/lab/assets/projects/srt.html)
 
 1. Software Defect Estimation Tool (SweET): [https://github.com/LanceFiondella/SwEET](https://github.com/LanceFiondella/SwEET)
 
@@ -119,25 +149,31 @@ After completing this part, students will:
 
 ## 3.2 TESTING TOOLS
 
-In this assignment, you will use either SRTAT or RDC-11 (an EXCEL worksheet and macro) tool to analyze the test data provided.
+In this assignment, you will use the following tools to analyze the test data provided.
 
+-  SRTAT **OR** 
+-  RDC-11 (an EXCEL worksheet and macro). 
 ## 3.3 SYSTEM UNDER TEST
 
 The system to be tested for this part is a hypothetical system and its failure data is attached. There will be a few test data files and the students should select one of them.
 
 ## 3.4 FAMILIARIZATION
 
-### 3.4.1 INSTALL RDC
+### 3.4.1 INSTALL RDC (**Suggestion**)
 
-1. Get Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf.
+1. Get Reliability-Demonstration-Chart.xls and its manual RDC-xls-Overview.pdf for the attachemnt OR download it from the [Sourceforge.net](https://sourceforge.net/projects/rdc/) .
 2. Open the excel sheet and verify that it works by setting various risk factors, i.e. check whether the right chart will be generated.
 3. Read the document explaining its functionality.
-4. I ![](RackMultipart20210317-4-17mi0h7_html_d3a7370cfd77460c.png) f you are running 64-bit Windows operating system, install the CASRE-DOSBOX and then install and run CASRE.
+
+![](install-rdc.png) 
 
 
+### 3.4.2 Alternative: INSTALL SRTAT 
 
-### 3.4.2 Alternative: INSTALLSTRAT (as in 2.4.2, RDC is included in SRTAT tool as an option tab)
-![](./media/2021-03-17-17-34-48.png)
+Install SRTAT(as in 2.4.2, RDC is included in SRTAT tool as an option tab)
+
+![](./media/install-srtat.png)
+
 1. Get SRTAT-SRE-tool.zip.
 2. It is a Java package that has 4 variations for different operating systems. Install the appropriate version on your system.
 3. Run and verify its functionalities.
