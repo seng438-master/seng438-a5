@@ -176,7 +176,7 @@ It is mandatory for all team members to attend the demo session and explain the 
 
 ## 5.2 Lab report (85%)
 
-Students will be required to submit a report on their work in the lab as a group. To be consistent, please use the template Word file “Assignment5-ReportTemplate.md”. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate.
+Students will be required to submit a report on their work in the lab as a group. To be consistent, please use the template file “Assignment5-ReportTemplate.md”. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate.
 
 
 
